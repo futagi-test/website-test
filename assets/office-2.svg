@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="事務所の風景サンプル：相談スペース">
+  <defs>
+    <linearGradient id="wall2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F1F6EE"/>
+      <stop offset="1" stop-color="#FBFEFB"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="520" fill="url(#wall2)"/>
+  <rect y="390" width="1200" height="130" fill="#E8EAD9"/>
+  <rect y="390" width="1200" height="6" fill="#CDECC2"/>
+  <!-- 大きな窓と外の景色 -->
+  <rect x="740" y="60" width="380" height="240" rx="10" fill="#DCEBF2" stroke="#8FD66A" stroke-width="6"/>
+  <circle cx="1050" cy="120" r="28" fill="#F4E6B8"/>
+  <path d="M760 250 L840 180 L900 240 L970 170 L1100 250 Z" fill="#8FD66A"/>
+  <line x1="930" y1="60" x2="930" y2="300" stroke="#8FD66A" stroke-width="6"/>
+  <!-- 丸テーブル -->
+  <ellipse cx="470" cy="360" rx="220" ry="48" fill="#BDD6A9"/>
+  <ellipse cx="470" cy="345" rx="220" ry="48" fill="#DCE6C5"/>
+  <rect x="455" y="360" width="30" height="70" fill="#BDD6A9"/>
+  <!-- 椅子（左右） -->
+  <rect x="170" y="300" width="70" height="110" rx="14" fill="#12A96F"/>
+  <rect x="700" y="300" width="70" height="110" rx="14" fill="#12A96F"/>
+  <!-- 書類 -->
+  <rect x="400" y="320" width="80" height="50" rx="4" fill="#FFFFFF" stroke="#8FD66A" stroke-width="3" transform="rotate(-8 440 345)"/>
+  <!-- 観葉植物 -->
+  <rect x="90" y="300" width="64" height="100" rx="8" fill="#BDD6A9"/>
+  <path d="M122 300 C90 255 100 205 122 188 C144 205 154 255 122 300 Z" fill="#12A96F"/>
+  <!-- ラベル -->
+  <rect x="40" y="450" width="320" height="40" rx="20" fill="rgba(51,51,51,0.55)"/>
+  <text x="60" y="476" font-family="'Noto Sans JP',sans-serif" font-size="20" font-weight="500" fill="#FFFFFF">② 相談スペース（サンプル画像）</text>
+</svg>

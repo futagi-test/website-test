@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 760" role="img" aria-label="笑顔で相談する様子（サンプル背景画像）" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="heroSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBFEFB"/>
+      <stop offset="0.6" stop-color="#F1FAF0"/>
+      <stop offset="1" stop-color="#E9F8EF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1440" height="760" fill="url(#heroSky)"/>
+  <!-- 床 -->
+  <rect y="560" width="1440" height="200" fill="#E8EAD9"/>
+  <rect y="560" width="1440" height="8" fill="#CDECC2"/>
+
+  <!-- 窓と差し込む光 -->
+  <rect x="980" y="80" width="360" height="300" rx="12" fill="#FFFFFF" stroke="#8FD66A" stroke-width="8"/>
+  <rect x="990" y="90" width="340" height="280" rx="8" fill="#E7F1F4"/>
+  <line x1="1160" y1="80" x2="1160" y2="380" stroke="#8FD66A" stroke-width="8"/>
+  <line x1="980" y1="230" x2="1340" y2="230" stroke="#8FD66A" stroke-width="8"/>
+  <circle cx="1240" cy="160" r="42" fill="#F6D98C"/>
+  <circle cx="1180" cy="300" r="150" fill="#FCE7B8" opacity="0.35"/>
+
+  <!-- 観葉植物（左） -->
+  <rect x="120" y="430" width="96" height="150" rx="10" fill="#BDD6A9"/>
+  <path d="M168 430 C120 360 134 285 168 258 C202 285 216 360 168 430 Z" fill="#12A96F"/>
+  <path d="M168 430 C112 388 100 320 116 285 C166 312 192 376 168 430 Z" fill="#8FD66A"/>
+
+  <!-- テーブル -->
+  <ellipse cx="720" cy="600" rx="360" ry="70" fill="#BDD6A9"/>
+  <ellipse cx="720" cy="578" rx="360" ry="70" fill="#DCE6C5"/>
+  <!-- 書類とマグカップ -->
+  <rect x="650" y="556" width="120" height="70" rx="6" fill="#FFFFFF" stroke="#8FD66A" stroke-width="3" transform="rotate(-6 710 591)"/>
+  <rect x="830" y="556" width="44" height="40" rx="6" fill="#12A96F"/>
+
+  <!-- 相談員（左の人・グリーン） -->
+  <g>
+    <rect x="470" y="430" width="170" height="170" rx="60" fill="#12A96F"/>
+    <circle cx="555" cy="380" r="70" fill="#F0C9A8"/>
+    <path d="M488 360 C490 305 540 288 565 290 C612 294 628 332 624 362 C612 338 585 330 560 332 C530 334 502 340 488 360 Z" fill="#6B4F3A"/>
+    <!-- 笑顔 -->
+    <circle cx="535" cy="378" r="6" fill="#3A2E25"/>
+    <circle cx="578" cy="378" r="6" fill="#3A2E25"/>
+    <path d="M534 400 Q557 422 580 400" fill="none" stroke="#7A4B3A" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="524" cy="395" r="9" fill="#F4B79C" opacity="0.7"/>
+    <circle cx="588" cy="395" r="9" fill="#F4B79C" opacity="0.7"/>
+  </g>
+
+  <!-- お客さま（右の人・テラコッタ） -->
+  <g>
+    <rect x="800" y="430" width="170" height="170" rx="60" fill="#D8956A"/>
+    <circle cx="885" cy="380" r="70" fill="#F3D2B3"/>
+    <path d="M820 372 C815 318 858 292 888 292 C930 292 958 322 952 372 C946 340 915 330 885 330 C858 330 832 342 820 372 Z" fill="#3F342B"/>
+    <!-- 笑顔 -->
+    <circle cx="865" cy="378" r="6" fill="#3A2E25"/>
+    <circle cx="908" cy="378" r="6" fill="#3A2E25"/>
+    <path d="M864 400 Q887 422 910 400" fill="none" stroke="#7A4B3A" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="854" cy="395" r="9" fill="#F4B79C" opacity="0.7"/>
+    <circle cx="918" cy="395" r="9" fill="#F4B79C" opacity="0.7"/>
+  </g>
+</svg>
