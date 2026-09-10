@@ -307,3 +307,14 @@
     });
   }
 })();
+
+// スマホ縦長：ヒーロー内の相談ボタンと固定ボタンの重なりを避ける
+(function(){
+  var hero = document.querySelector('.hero');
+  var floating = document.querySelector('.floating-cta');
+  if (!hero || !floating || !('IntersectionObserver' in window)) return;
+  var observer = new IntersectionObserver(function(entries){
+    floating.classList.toggle('hero-in-view', entries[0].isIntersecting);
+  });
+  observer.observe(hero);
+})();

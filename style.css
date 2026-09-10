@@ -1233,9 +1233,9 @@ body{background:linear-gradient(180deg,#ffffff 0%,#f8fffa 42%,#f3fbf2 100%);}
   transform:translateY(18px) scale(.985);
   animation:heroPhotoCrossFade 18s ease-in-out infinite!important;
 }
-.hero__photo--large{animation-delay:2.15s!important;}
-.hero__photo--small{animation-delay:8.15s!important;}
-.hero__photo--thin{animation-delay:14.15s!important;}
+.hero__photo--large{animation-delay:-1.44s!important;}
+.hero__photo--small{animation-delay:4.56s!important;}
+.hero__photo--thin{animation-delay:10.56s!important;}
 .hero__photo::after{
   background:linear-gradient(180deg,rgba(255,255,255,.03) 35%,rgba(0,111,88,.18))!important;
 }
@@ -2597,3 +2597,102 @@ body{background:linear-gradient(180deg,#ffffff 0%,#f8fffa 42%,#f3fbf2 100%);}
     transition:none;
   }
 }
+
+/* 個人情報保護方針・お問い合わせ前の確認 */
+.privacy-policy{max-width:820px;margin:0 auto;padding:28px 0 80px;overflow-wrap:anywhere;}
+.privacy-policy__eyebrow{color:var(--main-dark);font-size:.85rem;font-weight:700;letter-spacing:.08em;}
+.privacy-policy h1{font-size:clamp(1.6rem,4.8vw,2.5rem);line-height:1.5;margin:10px 0 26px;}
+.privacy-policy__intro{font-size:1.02rem;}
+.privacy-policy section{margin-top:36px;}
+.privacy-policy h2{font-size:clamp(1.1rem,3.5vw,1.35rem);line-height:1.65;padding-bottom:10px;margin-bottom:16px;border-bottom:1px solid var(--line);}
+.privacy-policy p + p{margin-top:14px;}
+.privacy-policy ul{list-style:disc;padding-left:1.4em;margin:16px 0;}
+.privacy-policy li + li{margin-top:10px;}
+.privacy-policy a:not(.btn),.contact-form__privacy a{text-decoration:underline;text-underline-offset:.2em;color:var(--main-dark);}
+.privacy-policy__notice{padding:18px 22px;border-left:3px solid var(--main);background:var(--sub);}
+.privacy-policy__details > div{display:grid;grid-template-columns:6em 1fr;gap:18px;padding:12px 0;border-bottom:1px solid var(--line);}
+.privacy-policy__details dt{font-weight:700;}
+.privacy-policy__date{margin:36px 0 24px;color:var(--text-sub);font-size:.9rem;}
+.contact-form__privacy{margin:8px 0 22px;font-size:.85rem;line-height:1.85;color:var(--text);}
+.contact-form__privacy p + p{margin-top:8px;}
+.contact-form__consent{display:flex;align-items:flex-start;gap:10px;margin-top:16px;cursor:pointer;}
+.contact-form__consent input{flex:none;width:20px;height:20px;margin:3px 0 0;accent-color:var(--main-dark);}
+.contact-form__consent input:focus-visible,.contact-form__privacy a:focus-visible,.privacy-policy a:focus-visible{outline:3px solid var(--main-dark);outline-offset:4px;}
+@media(max-width:480px){
+  .privacy-policy__details > div{grid-template-columns:1fr;gap:4px;}
+  .privacy-policy{padding-bottom:48px;}
+}
+/* 2026-09-10 実ロゴ。画像の縦横比と原画を保持 */
+.office-logo{display:block;flex:none;width:48px;height:50px;object-fit:contain;}
+.portrait-break,.portrait-only{display:none;}
+
+/* スマートフォン縦長表示だけの調整 */
+@media (max-width:640px) and (orientation:portrait){
+  .portrait-break{display:block;}
+  .portrait-only{display:inline;}
+  .portrait-hide{display:none;}
+  .header .logo{gap:8px;}
+  .header .office-logo{width:40px;height:42px;}
+  .header .logo__text{display:block;font-size:clamp(.72rem,3.1vw,.86rem);line-height:1.5;white-space:nowrap;}
+  .footer__brand{align-items:center;line-height:1.65;}
+  .hero__body{display:flex;flex-direction:column;}
+  .hero__body .hero__lead{order:0;}
+  .hero__body .hero__title{
+    order:1;font-size:clamp(1.85rem,8.2vw,2.25rem)!important;
+    line-height:1.48!important;letter-spacing:.015em!important;
+    overflow:visible;margin-bottom:22px!important;
+  }
+  .hero__body .hero__title > span{
+    display:block!important;white-space:nowrap!important;
+    opacity:1;transform:none;
+    animation:portrait-title-in .85s cubic-bezier(.16,1,.3,1) both!important;
+  }
+  .hero__body .hero__title > span:nth-child(2){
+    color:var(--main-dark);
+    text-decoration:underline;text-decoration-color:var(--accent-2);
+    text-decoration-thickness:.12em;text-underline-offset:.15em;
+    animation-delay:.18s!important;
+  }
+  .hero__body .hero__message{order:2;margin-bottom:18px;}
+  .hero__message .hero__msgline:nth-child(5),
+  .hero__message .hero__msgline:nth-child(6){
+    display:inline!important;opacity:1!important;transform:none!important;animation:none!important;
+  }
+  .hero__message .hero__msgline:nth-child(5)::before{content:"";display:block;margin-top:12px;}
+  .hero__body .hero__points{order:3;margin-bottom:20px!important;animation-delay:.35s!important;}
+  .hero__body .hero__actions{order:4;margin:0!important;gap:12px!important;animation-delay:.45s!important;}
+  .hero__actions .btn{width:100%!important;justify-content:space-between;}
+  .news__desc br{display:none;}
+  #reasons .section__title,#plans .section__title,#about .section__title{text-wrap:initial;}
+  #about .about{gap:12px!important;row-gap:12px!important;}
+  #about .about__body{margin-bottom:0!important;padding-bottom:0!important;}
+  #about .about__text:last-child{margin-bottom:0!important;}
+  #about .about__info{margin-top:0!important;padding-top:0!important;}
+  #about .info{margin-top:0!important;}
+  .greeting__sign{font-size:clamp(.8rem,3.45vw,1rem);line-height:1.85;}
+}
+@keyframes portrait-title-in{
+  from{opacity:0;transform:translateY(12px);}
+  to{opacity:1;transform:translateY(0);}
+}
+@media (max-width:640px) and (orientation:portrait) and (prefers-reduced-motion:reduce){
+  .hero__body .hero__title,.hero__body .hero__title > span,
+  .hero__body .hero__actions,.hero__body .hero__points,
+  .hero__message .hero__msgline{
+    animation:none!important;opacity:1!important;transform:none!important;
+  }
+}
+@media (max-width:640px) and (orientation:portrait){
+  .floating-cta.hero-in-view{opacity:0!important;visibility:hidden;pointer-events:none;}
+}
+/* 最初の相談写真は初期表示から見せる。動きを抑える設定でも同じ写真を表示。 */
+@media (prefers-reduced-motion: reduce){
+  .hero__photo{animation:none!important;opacity:0!important;transform:none!important;filter:none!important;}
+  .hero__photo--large{opacity:1!important;}
+  .hero__photo img{animation:none!important;}
+}
+
+/* MESSAGE：相談風景の二人を中心に拡大表示 */
+.greeting__person.greeting__photoOnly{overflow:hidden!important;border-radius:28px!important;}
+.greeting__photoOnly img{object-position:48% 40%!important;transform:scale(1.25);transform-origin:48% 38%;opacity:1!important;}
+@media(max-width:640px){.greeting__person.greeting__photoOnly{border-radius:22px!important;}}

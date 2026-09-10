@@ -9,6 +9,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.ico?v=20260910-3" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=20260910-3">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=20260910-3">
 </head>
 <body class="payroll-page">
 
@@ -16,8 +19,8 @@
 <header class="header" id="top">
   <div class="container header__inner">
     <a href="index.html" class="logo">
-      <span class="logo__mark">YH</span>
-      <span class="logo__text">やはば特定社会保険労務士法人</span>
+      <img class="office-logo" src="assets/yahaba-sunflower-logo.png?v=20260910-3" alt="" width="48" height="50">
+      <span class="logo__text">やはば特定<br class="portrait-break">社会保険労務士法人</span>
     </a>
     <nav class="nav" id="nav">
       <a href="index.html">ホーム</a>
@@ -267,8 +270,8 @@
 <footer class="footer">
   <div class="container footer__inner">
     <div class="footer__brand">
-      <span class="logo__mark">YH</span>
-      <span>やはば特定社会保険労務士法人</span>
+      <img class="office-logo" src="assets/yahaba-sunflower-logo.png?v=20260910-3" alt="" width="48" height="50">
+      <span>やはば特定<br class="portrait-break">社会保険労務士法人</span>
     </div>
     <nav class="footer__nav">
       <a href="index.html#services">できること</a>
@@ -277,6 +280,7 @@
       <a href="index.html#plans">料金プラン</a>
       <a href="index.html#about">事務所について</a>
       <a href="index.html#contact">お問い合わせ</a>
+      <a href="privacy.html">プライバシーポリシー</a>
     </nav>
     <p class="footer__copy">&copy; やはば特定社会保険労務士法人</p>
   </div>
@@ -289,7 +293,7 @@
   <div class="phone-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="phoneModalTitle">
     <button type="button" class="phone-modal__close" aria-label="閉じる" data-phone-close>×</button>
     <p class="phone-modal__eyebrow">お電話でのご相談</p>
-    <h2 class="phone-modal__title" id="phoneModalTitle">やはば特定社会保険労務士法人</h2>
+    <h2 class="phone-modal__title" id="phoneModalTitle">やはば特定<br class="portrait-break">社会保険労務士法人</h2>
     <a class="phone-modal__number" href="tel:0196133228">019-613-3228</a>
     <p class="phone-modal__note">スマートフォンでは番号をタップすると発信できます。<br>受付時間：平日 9:00〜18:00</p>
   </div>
@@ -328,6 +332,14 @@
         <textarea class="contact-form__input contact-form__textarea" id="cf-message" name="相談内容" rows="5" required></textarea>
       </div>
 
+      <div class="contact-form__privacy">
+        <p id="cf-privacy-note">ご入力内容は、お問い合わせへの回答・相談対応と、そのための連絡に利用します。マイナンバーや健康情報、従業員の個人情報は、このフォームには記入しないでください。</p>
+        <p><a href="privacy.html" target="_blank" rel="noopener">プライバシーポリシーを読む（別タブで開きます）</a></p>
+        <label class="contact-form__consent" for="cf-privacy">
+          <input id="cf-privacy" name="プライバシーポリシーへの同意" type="checkbox" value="同意する" required aria-describedby="cf-privacy-note">
+          <span>個人情報の取り扱いを確認し、同意します <span class="contact-form__req">必須</span></span>
+        </label>
+      </div>
       <button type="submit" class="btn btn--lg contact-form__submit">送信する</button>
       <p class="contact-form__status" role="status" aria-live="polite"></p>
       <p class="contact-form__note">受付時間：平日 9:00〜18:00／いただいた内容は相談対応の目的のみに使用します。</p>
