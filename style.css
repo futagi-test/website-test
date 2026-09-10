@@ -2696,3 +2696,12 @@ body{background:linear-gradient(180deg,#ffffff 0%,#f8fffa 42%,#f3fbf2 100%);}
 .greeting__person.greeting__photoOnly{overflow:hidden!important;border-radius:28px!important;}
 .greeting__photoOnly img{object-position:48% 40%!important;transform:scale(1.25);transform-origin:48% 38%;opacity:1!important;}
 @media(max-width:640px){.greeting__person.greeting__photoOnly{border-radius:22px!important;}}
+
+/* メールでの相談・コピー可能な宛先 */
+.contact-email{max-width:620px;margin:26px auto 0;text-align:center;line-height:1.8;}
+.contact-email__address{display:block;margin:6px 0 12px;font-size:clamp(1rem,4.5vw,1.35rem);font-weight:700;text-decoration:underline;text-underline-offset:4px;user-select:text;overflow-wrap:anywhere;}
+.contact-email__copy{padding:9px 18px;border:1px solid currentColor;border-radius:999px;background:transparent;color:inherit;font:inherit;cursor:pointer;}
+.contact-email__copy:focus-visible{outline:3px solid currentColor;outline-offset:4px;}
+.contact-email__status{min-height:1.8em;font-size:.86rem;margin-top:6px;}
+.contact-email__note{font-size:.83rem;margin-top:8px;line-height:1.8;}
+.contact-email__note a{text-decoration:underline;}

@@ -62,7 +62,7 @@
           必要な業務を整理し、自社開発の給与計算システムを活用しながら、無理のない形でアウトソーシングを始められます。
         </p>
         <div class="payroll-hero__actions">
-          <button type="button" class="btn btn--primary contact-modal-open">給与計算について相談する</button>
+          <a href="mailto:info@yahaba-sharoushi.com" class="btn btn--primary">給与計算について相談する</a>
           <a class="payroll-text-link" href="index.html#plans">料金の考え方を見る</a>
         </div>
         <p class="payroll-hero__area">岩手県内対応・矢巾町周辺を中心にサポート</p>
@@ -244,7 +244,7 @@
         <p class="payroll-mini-cta__eyebrow">Free consultation</p>
         <h2>毎月の給与計算、ひとりで抱え込まずにご相談ください</h2>
         <p>「何をどこまで任せられるのか」から、一緒に整理します。</p>
-        <button type="button" class="btn btn--primary btn--lg contact-modal-open">メールで無料相談する</button>
+        <a href="mailto:info@yahaba-sharoushi.com" class="btn btn--primary btn--lg">メールで無料相談する</a>
       </aside>
     </article>
   </div>
@@ -258,8 +258,16 @@
         いっしょに整理するところから始めましょう。
       </p>
       <div class="cta__actions">
-        <button type="button" class="btn btn--white btn--lg contact-modal-open">メールで相談する</button>
+        <a href="mailto:info@yahaba-sharoushi.com" class="btn btn--white btn--lg">メールで相談する</a>
         <button type="button" class="btn btn--outline btn--lg phone-modal-open">電話で相談する</button>
+      </div>
+            <div class="contact-email">
+        <p>メールの宛先</p>
+        <a class="contact-email__address" href="mailto:info@yahaba-sharoushi.com">info@yahaba-sharoushi.com</a>
+        <button type="button" class="contact-email__copy" data-copy-email>メールアドレスをコピー</button>
+        <p class="contact-email__status" role="status" aria-live="polite"></p>
+        <p class="contact-email__note">メールソフトが開かない場合は、アドレスをコピーしてお使いのメールから送信してください。</p>
+        <p class="contact-email__note">いただいた内容は相談対応とそのための連絡に利用します。<a href="privacy.html">プライバシーポリシー</a></p>
       </div>
       <p class="cta__note">受付時間：平日 9:00〜18:00</p>
     </div>
@@ -296,54 +304,6 @@
     <h2 class="phone-modal__title" id="phoneModalTitle">やはば特定<br class="portrait-break">社会保険労務士法人</h2>
     <a class="phone-modal__number" href="tel:0196133228">019-613-3228</a>
     <p class="phone-modal__note">スマートフォンでは番号をタップすると発信できます。<br>受付時間：平日 9:00〜18:00</p>
-  </div>
-</div>
-
-<!-- お問い合わせフォーム -->
-<div class="contact-modal" id="contactModal" aria-hidden="true">
-  <div class="contact-modal__overlay" data-contact-close></div>
-  <div class="contact-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
-    <button type="button" class="contact-modal__close" aria-label="閉じる" data-contact-close>×</button>
-    <p class="contact-modal__eyebrow">メールでのご相談</p>
-    <h2 class="contact-modal__title" id="contactModalTitle">お問い合わせフォーム</h2>
-    <p class="contact-modal__lead">下のフォームにご記入ください。内容を確認のうえ、担当者よりご返信いたします。</p>
-
-    <!-- 通知メールの送信先は Netlify 管理画面 → Site → Forms → Form notifications で設定します（メールアドレスはコードではなく管理画面に登録） -->
-    <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value="contact">
-      <p class="contact-form__hp" hidden>
-        <label>この欄は記入しないでください <input name="bot-field"></label>
-      </p>
-
-      <div class="contact-form__row">
-        <label class="contact-form__label" for="cf-name">お名前 <span class="contact-form__req">必須</span></label>
-        <input class="contact-form__input" id="cf-name" name="お名前" type="text" required autocomplete="name">
-      </div>
-      <div class="contact-form__row">
-        <label class="contact-form__label" for="cf-email">メールアドレス <span class="contact-form__req">必須</span></label>
-        <input class="contact-form__input" id="cf-email" name="メールアドレス" type="email" required autocomplete="email">
-      </div>
-      <div class="contact-form__row">
-        <label class="contact-form__label" for="cf-tel">電話番号 <span class="contact-form__opt">任意</span></label>
-        <input class="contact-form__input" id="cf-tel" name="電話番号" type="tel" autocomplete="tel">
-      </div>
-      <div class="contact-form__row">
-        <label class="contact-form__label" for="cf-message">相談内容 <span class="contact-form__req">必須</span></label>
-        <textarea class="contact-form__input contact-form__textarea" id="cf-message" name="相談内容" rows="5" required></textarea>
-      </div>
-
-      <div class="contact-form__privacy">
-        <p id="cf-privacy-note">ご入力内容は、お問い合わせへの回答・相談対応と、そのための連絡に利用します。マイナンバーや健康情報、従業員の個人情報は、このフォームには記入しないでください。</p>
-        <p><a href="privacy.html" target="_blank" rel="noopener">プライバシーポリシーを読む（別タブで開きます）</a></p>
-        <label class="contact-form__consent" for="cf-privacy">
-          <input id="cf-privacy" name="プライバシーポリシーへの同意" type="checkbox" value="同意する" required aria-describedby="cf-privacy-note">
-          <span>個人情報の取り扱いを確認し、同意します <span class="contact-form__req">必須</span></span>
-        </label>
-      </div>
-      <button type="submit" class="btn btn--lg contact-form__submit">送信する</button>
-      <p class="contact-form__status" role="status" aria-live="polite"></p>
-      <p class="contact-form__note">受付時間：平日 9:00〜18:00／いただいた内容は相談対応の目的のみに使用します。</p>
-    </form>
   </div>
 </div>
 
